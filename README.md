@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Congratulations on your success so far in the recruitment process. We would like to invite you to complete a short assignment. This assignment is designed to give you an insight of the type of work you will be doing at Smarter Technologies Group. It is also designed to give you an opportunity to demonstrate your skills and abilities.
+🎉 Congratulations on your success so far in the recruitment process. We would like to invite you to complete a short assignment. This assignment is designed to give you an insight of the type of work you will be doing at Smarter Technologies Group. It is also designed to give you an opportunity to demonstrate your skills and abilities.
 
 ## The Assignment
 
@@ -10,10 +10,10 @@ The assignment is to create a simple weather widget.
 
 The widget should display the following information:
 
-- Location
-- Current weather conditions
+- 🗺️ Location
+- ⛅ Current weather conditions
 
-Any additional information or features are up to you.
+Any additional information and/or features are up to you.
 
 ## Requirements
 
