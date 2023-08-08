@@ -1,0 +1,18 @@
+:root {
+  --font-family: Helvetica, Arial, sans-serif;
+  --standard-padding: 1rem;
+}
+
+h1 {
+  padding: 0 var(--standard-padding);
+  font-family: var(--font-family);
+  font-size: 2rem;
+  color: rgb(1, 1, 134);
+}
+
+p {
+  padding: 0 var(--standard-padding);
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  color: rgb(3, 3, 224);
+}
