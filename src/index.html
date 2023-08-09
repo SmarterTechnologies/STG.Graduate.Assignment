@@ -13,7 +13,7 @@
     <div class="widget">
       <div class="searchBar">
         <input type="text" id="locationSearch" placeholder="Search">
-        <button onclick="searchByLocation()">Search</button>
+        <a class="exactLocation" href="#" onclick="getExactLocation()">Use my exact location</a>
       </div>
       <div class="weatherCard">
         <img id="weatherIcon" src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="An image which shows the icon depicting ">
@@ -21,7 +21,10 @@
           <h1 class="location">Cardiff</h1>
           <h2 class="description">Cloudy</h2>
           <h2 class="temperature">5°C</h2>
-          <h2 class="windSpeed">3mph</h2>
+          <div class="wind">
+            <img id="windDirectionArrow" src="static/arrow.png" alt="Wind Direction is ">
+            <h2 class="windSpeed">3mph</h2>
+          </div>
         </div>
       </div>
     </div>
