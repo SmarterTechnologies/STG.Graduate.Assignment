@@ -3,6 +3,40 @@
   --standard-padding: 1rem;
 }
 
+body {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  border:2px;
+  border-color: black;
+}
+
+.widget {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.searchBar {
+  grid-area: 1 / 1 / 2 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weatherCard {
+  grid-area: 2 / 1/ 4 / 3;
+  display:flex;
+  flex-direction: row;
+}
+
+.weatherDescription {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   padding: 0 var(--standard-padding);
   font-family: var(--font-family);
