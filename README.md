@@ -30,3 +30,16 @@ Please submit your assignment by creating a pull request to this repository or s
 ## Next Steps
 
 We will organise an in-person interview to discuss your assignment and your approach to solving the problem.
+
+
+## The Widget
+
+The widget is wholly contained in the div of class "widget". The widget has been developed and tested in a Chrome browser on Windows. It may not work as well in other browsers. 
+
+Future work could include:  
+
+- smoother error handling 
+- the choice to change units 
+- a better way to preload data
+- better icons
+- improved styling

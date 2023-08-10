@@ -11,25 +11,27 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
+  font-family: var(--font-family)
 }
 
 .widget {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 4fr;
   background-color: rgba(160, 159, 205, 25);
-  border-radius: 5% 40% 40% 5%;
-  max-width: 500px;
-  min-width: 280px;
+  border-radius: 5% 45% 45% 5%;
+  width: 300px;
+  height: 200px;
 }
 
 .searchBar {
-  grid-area: 1 / 1 / 2 / 6;
+  grid-area: 1 / 1 / 2 / 3;
   display: flex;
   flex-direction: column;
   align-items:start;
   justify-content: left;
   padding: 0.3em 1em;
+  font-size: 0.9rem;
   
 }
 
@@ -56,7 +58,7 @@ body {
 }
 
 .weatherCard {
-  grid-area: 2 / 1/ 4 / 3;
+  grid-area: 2 / 1/ 3 / 3;
   display:flex;
   flex-direction: row;
 }
@@ -64,7 +66,7 @@ body {
 #weatherIcon {
   align-self: center;
   border-radius: 50%;
-  height: 60%;
+  height: 50%;
   aspect-ratio: 1 / 1;
 }
 
@@ -79,7 +81,7 @@ h1 {
   margin: 0;
   font-family: var(--font-family);
   font-size: 2rem;
-  color: var(--standard-color)
+  color: var(--standard-color);
 }
 
 h2 {
@@ -87,22 +89,21 @@ h2 {
   margin: 0rem;
   font-family: var(--font-family);
   font-size: 1.2rem;
-  color: var(--standard-color)
+  color: var(--standard-color);
 }
 
 .wind {
-  padding: 0.3rem var(--standard-padding) 0.3rem 0;
-  margin: 0.3rem 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .windSpeed {
-  display:inline-block;
-  width: calc(100% - 50px);
-  padding: 0.3rem var(--standard-padding) 0.3rem 0;
+  width: 100%;
+  padding: 0.3rem 0.3rem;
 }
 
 #windDirectionArrow {
-  display: inline-block;
   height: 1.2rem;
   transform: rotate(45deg);
   padding: 0;
