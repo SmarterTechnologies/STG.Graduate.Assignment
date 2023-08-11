@@ -15,8 +15,8 @@ const weatherEl = document.getElementById('Weather');
 //creating a fucntion for fetching te weather data needed from the API
 async function getWeather(){
     try {
-        const r = await fetch("http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${LOCATION}"); //making a GET request to the API endpoint
-        const data = await r.json(); //convert response to JSON format 
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${LOCATION}`); //making a GET request to the API endpoint
+        const data = await response.json(); //convert response to JSON format 
         return data;
     }
     catch (error) {
