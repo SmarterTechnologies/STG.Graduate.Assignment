@@ -11,14 +11,29 @@
   </head>
   <body>
     <!--<p>Good luck!</p> -->
-    
+
     <!--Widget Container Div-->
     <div class="Widget-Container">
       <h1>Weather Widget</h1>
+
+      <!--Selecting Place DIV-->
+      <div class="placeDropDown">
+        <label for="select"> Please Select a Place: </label>
+        <select id="select">
+          <option value="London"> London </option>
+          <option value="Cardiff"> Cardiff </option>
+          <option value="Birmingham"> Birmingham </option>
+          <option value="Manchester"> Manchester </option>
+          <option value="Newport"> Newport </option>
+        </select>
+      </div>
+
+      <!--Information DIV-->
       <div class="'weatherInfo">
         <div class="Location" id="Location"> Location </div>
         <div class="Weather" id="Weather"> Current Weather</div>
       </div>
+
     </div>
 
     <script src="main.js"></script>
