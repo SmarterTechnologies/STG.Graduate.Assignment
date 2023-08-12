@@ -39,14 +39,17 @@ async function updatingWidget() {
         //adding new functionality of date
         const dateEl = document.getElementById('date');
         const time = new Date();
-        
-        //if time permited a time functionality, however it will have to match and change with each city
 
-         // Format date as Day, Month Date, Year
-         const dateOptions = { weekday: 'short', month: 'long', day: 'numeric', year: 'numeric' };
-         dateEl.textContent = time.toLocaleDateString('en-UK', dateOptions);
+        // Format date as Day, Month Date, Year
+        dateEl.textContent = time.toLocaleDateString('en-UK', { weekday: 'short', month: 'long', day: 'numeric', year: 'numeric'});
+         
+        //if time permited a time functionality, however it will have to match and change with each city
+        // Display local time
+        const localTime = new Date(WData.location.localtime);
+        const localTimeEl = document.getElementById('local-time');
+        localTimeEl.textContent = localTime.toLocaleTimeString('en-UK', {hour: 'numeric', minute: '2-digit', hour12: true});
     }
-    catch (e){
+    catch (e) {
         console.error('Fetching Weather Error', e);
     }
 }
@@ -55,4 +58,3 @@ async function updatingWidget() {
 
 updatingWidget(); //intialising the said weather widget
 citySelection.addEventListener('change', updatingWidget); //this listens and updates any city selection change
-

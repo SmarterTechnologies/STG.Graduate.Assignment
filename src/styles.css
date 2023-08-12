@@ -1,15 +1,18 @@
 :root {
   --font-family: Helvetica, Arial, sans-serif;
   --standard-padding: 1rem;
-  background-color: aliceblue;
+  background-color: rgb(249, 246, 246);
 }
 
+/* 
 h1 {
   padding: 0 var(--standard-padding);
   font-family: var(--font-family);
   font-size: 2rem;
-  color: rgb(144, 144, 235);
+  color: rgb(17, 21, 3);
 }
+
+*/
 
 p {
   padding: 0 var(--standard-padding);
@@ -18,33 +21,85 @@ p {
   color: rgb(3, 3, 224);
 }
 
-/* Styling Widget Container*/
-.Widget-Container {
-  text-align: center;
-  margin: 20px auto;
+/* Styling the Header */
+
+.header {
   padding: 20px;
-  border: 1px solid #ccc;
+  text-align: center;
+  background: #bcdee9;
+  color: white;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #060606, #0b0b0b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Styling Widget Container*/
+/*
+
+.Widget-Container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #dad8e1;
   background-color: #f8f8f8;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+*/
+
+/* Widget Container */
+.widget-container {
+  width: 300px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Styling the Header */
-.header {
-  text-align: center;
+/* Location */
+.Location {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-/* nav bar Styling */
+/* Weather Info */
+.weatherInfo {
+  display: flex;
+  align-items: center;
+}
+
+.Weather {
+  flex: 1;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
 
 
 .date {
   text-align: center;
-  padding: 25px;
+  padding: 20px;
+  position: relative;
+  width: fit-content; 
+  left: -20px;
+  background-color: rgb(209, 221, 225);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Styling the city dropdown */
 .placeDropDown {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .label {
@@ -56,10 +111,10 @@ p {
 }
 
 .select {
-  width: 25%;
+  width: 50%;
   padding: 5px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #749cc4;
   border-radius: 4px;
   text-align: center;
 }
