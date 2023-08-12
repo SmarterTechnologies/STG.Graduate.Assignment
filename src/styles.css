@@ -1,13 +1,14 @@
 :root {
   --font-family: Helvetica, Arial, sans-serif;
   --standard-padding: 1rem;
+  background-color: aliceblue;
 }
 
 h1 {
   padding: 0 var(--standard-padding);
   font-family: var(--font-family);
   font-size: 2rem;
-  color: rgb(1, 1, 134);
+  color: rgb(144, 144, 235);
 }
 
 p {
@@ -15,4 +16,50 @@ p {
   font-family: var(--font-family);
   font-size: 1.2rem;
   color: rgb(3, 3, 224);
+}
+
+/* Styling Widget Container*/
+.Widget-Container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the Header */
+.header {
+  text-align: center;
+}
+
+/* nav bar Styling */
+
+
+.date {
+  text-align: center;
+  padding: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styling the city dropdown */
+.placeDropDown {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.select {
+  width: 25%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
 }

@@ -20,9 +20,9 @@ async function getWeather(location){
         const data = await response.json(); //convert response to JSON format 
         return data;
     }
-    catch (error) {
-        console.error('Fetching data Error', error);
-        throw error
+    catch (e) {
+        console.error('Fetching getWeather data Error', e);
+        throw e
     }
 }
 //------------------------------------------------
@@ -35,9 +35,19 @@ async function updatingWidget() {
         const WData = await getWeather(selectedcity); //calling created function to get the weather data
         locationEl.textContent = WData.location.name;
         weatherEl.textContent = WData.current.condition.text;
+
+        //adding new functionality of date
+        const dateEl = document.getElementById('date');
+        const time = new Date();
+        
+        //if time permited a time functionality, however it will have to match and change with each city
+
+         // Format date as Day, Month Date, Year
+         const dateOptions = { weekday: 'short', month: 'long', day: 'numeric', year: 'numeric' };
+         dateEl.textContent = time.toLocaleDateString('en-UK', dateOptions);
     }
-    catch (error){
-        console.error('Fetching Weather Error', error);
+    catch (e){
+        console.error('Fetching Weather Error', e);
     }
 }
 //------------------------------------------------
