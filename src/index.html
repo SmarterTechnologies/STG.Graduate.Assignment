@@ -3,15 +3,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Widget Demo</title>
     <link
       rel="stylesheet"
       href="styles.css"
     />
   </head>
+
+
   <body>
-    <h1>Weather Widget</h1>
-    <p>Good luck!</p>
+    <div class="card">
+
+      <h1>Weather Widget</h1>
+
+      <div class="searchSection">
+        <input class="searchbox" type="text" id="City">
+        <button onclick="fetchWeather()" class="searchButton">Search</button>
+      </div>
+
+      <div id="errorResult"></div>
+
+      <div class="mainContext">
+
+        <h2 class="cityName">Bristol, United Kingdom</h2>
+        <img class="iconTemp" src="http://cdn.weatherapi.com/weather/64x64/day/113.png">
+
+        <div class="couples">
+
+          <div class="infoGroup">
+            <h3>Temperature</h3>
+            <div class="infoContent">
+              <img src="imgs/cloud-50.png">
+              <p class="attributesTemp">22.4c</p>
+            </div>
+          </div>
+
+          
+          <div class="infoGroup">
+            <h3>Humidity </h3>
+            <div class="infoContent">
+              <img src="imgs/humidity-50.png">
+              <p class="attributesHumid">20%</p>
+            </div>
+            
+          </div>
+          
+          <div class="infoGroup">
+            <h3>Wind</h3>
+            <div class="infoContent">
+            <img src="imgs/wind-50.png">
+            <p class="attributesWind">13mph</p>
+            </div>
+          </div>
+
+          <div class="infoGroup">
+          <h3>Precipitation</h3>
+          <div class="infoContent">
+            <img src="imgs/rain-50.png">
+            <p class="attributesPrecip">0.5mm</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
