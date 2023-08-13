@@ -11,6 +11,9 @@ const API_KEY = '9d33630a5cce4194a6b140510230808';
 const locationEl = document.getElementById('Location'); 
 const weatherEl = document.getElementById('Weather');
 const citySelection = document.getElementById('select');
+const dateEl = document.getElementById('date');
+const localTimeEl = document.getElementById('localTime');
+const tempEl = document.getElementById('temp');
 
 //------------------------------------------------
 //creating a fucntion for fetching te weather data needed from the API
@@ -37,17 +40,18 @@ async function updatingWidget() {
         weatherEl.textContent = WData.current.condition.text;
 
         //adding new functionality of date
-        const dateEl = document.getElementById('date');
         const time = new Date();
 
         // Format date as Day, Month Date, Year
-        dateEl.textContent = time.toLocaleDateString('en-UK', { weekday: 'short', month: 'long', day: 'numeric', year: 'numeric'});
+        dateEl.textContent = time.toLocaleDateString('en-UK', { weekday: 'short', month: 'long', day: 'numeric'});
          
         //if time permited a time functionality, however it will have to match and change with each city
         // Display local time
         const localTime = new Date(WData.location.localtime);
-        const localTimeEl = document.getElementById('local-time');
         localTimeEl.textContent = localTime.toLocaleTimeString('en-UK', {hour: 'numeric', minute: '2-digit', hour12: true});
+
+        const tempc = WData.current.temp_c;
+        tempEl.textContent = `${tempc} °C `;
     }
     catch (e) {
         console.error('Fetching Weather Error', e);
