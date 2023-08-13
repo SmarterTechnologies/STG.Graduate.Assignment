@@ -41,8 +41,6 @@ async function updatingWidget() {
 
         //adding new functionality of date
         const time = new Date();
-
-        // Format date as Day, Month Date, Year
         dateEl.textContent = time.toLocaleDateString('en-UK', { weekday: 'short', month: 'long', day: 'numeric'});
          
         //if time permited a time functionality, however it will have to match and change with each city
@@ -51,7 +49,7 @@ async function updatingWidget() {
         localTimeEl.textContent = localTime.toLocaleTimeString('en-UK', {hour: 'numeric', minute: '2-digit', hour12: true});
 
         const tempc = WData.current.temp_c;
-        tempEl.textContent = `${tempc} °C `;
+        tempEl.textContent = `${ tempc } °C `;
     }
     catch (e) {
         console.error('Fetching Weather Error', e);

@@ -1,3 +1,8 @@
+:root {
+  --font-family: Helvetica, Arial, sans-serif;
+  --standard-padding: 1rem;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
@@ -7,7 +12,7 @@ body {
 .header {
   text-align: center;
   padding: 10px;
-  background-color: #90c7ec;
+  background-color: #bcdcf1;
   color: #fff;
 }
 
@@ -16,7 +21,7 @@ body {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #4b4747;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -36,8 +41,6 @@ select {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 /* Styling Weather Info Divs */
@@ -72,6 +75,7 @@ select {
   text-align: center;
   margin-bottom: 10px;
   padding: 10px;
+  color: #f0f0f0;
 }
 
 .localTime {
@@ -79,5 +83,5 @@ select {
   margin-bottom: 10px;
   padding: 10px;
   font-size: 24px;
-
+  color: #f0f0f0;
 }
