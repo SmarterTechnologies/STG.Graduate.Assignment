@@ -17,7 +17,7 @@ Any additional information and/or features are up to you.
 
 ## Requirements
 
-- Use a fork of this repository to complete the assignment.
+- Use a copy of this repository to complete the assignment.
 - The widget should be written in vanilla JavaScript, HTML and CSS.
 - The widget should use the [Weather API](https://www.weatherapi.com/docs/) to retrieve weather data.
   - We have provided you with an API key to use for this assignment via email.
@@ -25,7 +25,7 @@ Any additional information and/or features are up to you.
 
 ## Submission
 
-Please submit your assignment by creating a pull request to this repository or sending a ZIP of your source code via email.
+Please submit your assignment by sending a ZIP of your source code via email.
 
 ## Next Steps
 
